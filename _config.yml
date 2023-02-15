@@ -6,34 +6,34 @@ favicon: images/favicon.ico
 version: 2
 
 # Personal info
-name: Brett Harris
-title: Senior Network System Administrator
-email: brett.h@email.co.uk
-website: www.github.com/sproogen/resume-theme
+name: 김 지 훈
+title: Security Engineer
+email: swoohooh@gmail.com
+# website: www.github.com/sproogen/resume-theme
 
 # Dark Mode (true/false/never)
 darkmode: false
 
 # Social links
-twitter_username: facespics
-github_username:  sproogen
+# twitter_username: facespics
+github_username: swoohooh
 # stackoverflow_username: "00000001"
 # dribbble_username: jekyll
 # facebook_username: jekyll
 # flickr_username: jekyll
-instagram_username: jameswgrant
-linkedin_username: jameswgrant
+# instagram_username: jameswgrant
+linkedin_username: jihoon-kim-243134264
 # xing_username: jekyll
 # pinterest_username: jekyll
-youtube_username: globalmtb
+# youtube_username: globalmtb
 # googleplus_username: +jekyll
 # orcid_username: 0000-0000-0000-0000
 
 # Additional icon links
-additional_links:
-- title: itsgoingto.be
-  icon: fas fa-globe
-  url: https://www.itsgoingto.be
+# additional_links:
+#   - title: itsgoingto.be
+#     icon: fas fa-globe
+#     url: https://www.itsgoingto.be
 # - title: another link
 #   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&m=free)
 #   url: Link url (eg. https://google.com)
@@ -45,72 +45,358 @@ additional_links:
 # google_analytics: "UA-00000000-0"
 
 # About Section
-# about_title: About Me
+about_title: <b>절차를 기계에 위임하는 개발자</b>
 about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
-  Hi, my name's Brett and I'm a senior network system administrator. As well as administrating systems I also have experience making software and web apps. I have worked at a number of companies gaining teamwork and leadership skills.
+  안녕하세요, 저는 Security Engineer 로 일하고 있는 김지훈입니다.
+  안전한 사이버 환경을 만드는 기술에 관심이 있고, 그 중 특히 OS나 platform 단의 보안 기술에 관심이 많습니다.
+  자동으로 잠재 취약점을 발견하는 분야와 그 취약점들을 보호하는 기술에 대한 경험이 많습니다.
 
-  I am most skilled in: <mark>AWS</mark> and <mark>Eating Pizza</mark>
+  |
+
+  반복되는 업무에 사용하는 시간을 절약하는게 업무의 효율성을 높이는 일이라고 믿습니다.
+  다양한 자동화 프로세스에 관심이 많고, 세번 이상 반복하게되는 작업은 무조건 스크립트로 실행한다는 원칙이 있습니다.
+  개발분야 뿐만 아니라 개인 업무차원에서 CI & CD pipeline 구축을 하기 위해 노력합니다.
+
+  |
+
+  새로운 기술에 관심이 많습니다.
+  기술 자체도 관심있지만 그보다 그 기술이 나오게 된 배경에 관심이 많으며, 그를 알기 위해서 경쟁 기술의 장단점과 시대적인 흐름을 정리해서 공부하길 좋아합니다.
 
 content:
-  - title: Projects # Title for the section
-    layout: list # Type of content section (list/text)
-    content:
-      - layout: top-middle
-        title: Super awesome project
-        link: github.com/sproogen
-        # link_text: Project Website
-        additional_links:
-          - title:  sproogen/modern-resume-theme
-            icon: fab fa-github
-            url: github.com/sproogen/modern-resume-theme
-          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
-          #   icon: fab fa-github
-          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
-        quote: >
-          This is probably one of the greatest apps ever created, if you don't agree you're probably wrong.
-        description: | # this will include new lines to allow paragraphs
-          I started this project as a way if learning <mark>React</mark> and it has since grown into a fully fledged app. I have learned many skills through this and been I'm very proud of having this in my portfolio. If you don't have a project as awesome as this I would advise you make one.
-
-  - title: Experience # Title for the section
+  - title: <b>Experience</b> # Title for the section
     layout: list # Type of content section (list/text)
     content:
       - layout: left
-        title: The Boring Company
-        link: boringcompany.com
+        title: Samsung Research
+        link: https://research.samsung.com
         # link_text: boringcompany.com
-        sub_title: Senior Network System Administrator
-        caption: November 2017 - Present
+        sub_title: 보안 책임 연구원
+        caption: 2014.03 - Present
         quote: >
-          Solving 21st century problems by diging holes and making game changing products like the *not a flamethrower*
+          Security team에서 OS 부터 application level 까지 다양한 layer의 보안 문제를 경험하고 해결해 온 경험 보유
         description: | # this will include new lines to allow paragraphs
-            Every company needs its networks properly administered and The Boring Compay is no exception. Digging holes is hard and I play my part making sure the whole company stays connected. I lead a team of 5 people and enjoy driving the company to try new technologies.
+          - `Fuzzing`을 활용해 자동으로 software 잠재 취약점을 찾는 기술인 Utopia 연구 및 개발
+            - Utopia 를 통해 linux system library & android library 에서 20개 이상의 잠재 취약점 발견 및 `CVE` 등록
+            - android library 취약점 발견 프로젝트에서 3명의 팀원을 `Tech leading`
+            - python, C++, llvm 사용
+            - <a href="https://github.com/Samsung/UTopia" target="_blank" rel="noopener noreferrer">UTopia github</a>
 
-  - title: Education # Title for the section
+          |
+
+          - `Graph DB` 를 활용한 취약점 연관 분석 기능 개발
+            - python, neo4j, dgraph 사용
+
+          |
+
+          - Threat Intelligence 기술에 활용하기 위한 악성 url & ip `crawler` 개발
+            - 일일 약 `100k page 를 수집`했으며, 그 중 악성 url & ip 수백개 검출
+            - python, kafka, vpn API, mongoDB 사용
+
+          |
+
+          - `Machine Learning` 기반 Anti-virus engine 개발
+            - python, scikit-learn, TensorFlow, pandas 사용
+
+          |
+
+          - `Trustzone` 을 활용한 Tizen 커널 무결성 보호 기술인 SIM 연구 및 개발
+            - 삼성(Tizen) TV 에 SIM 기술을 '15년부터 현재까지 탑재
+            - C(Device Driver), C++, TrustWare, Tizen 사용
+
+      - layout: left
+        title: Samsung Software Membership
+        # link: https://research.samsung.com
+        # link_text: boringcompany.com
+        sub_title: 인턴 개발자
+        caption: 2011.01 - 2014.02
+        quote: >
+          다양한 미니 프로젝트를 통해 여러 분야에 대한 전반적인 지식 습득. 특히 web 경험 다수 보유.
+        description: | # this will include new lines to allow paragraphs
+          - `Dokan`을 이용해 클라우드 스토리지를 통합한 통합형 스토리 플랫폼 개발
+            - 공개SW 개발자대회(2013) 은상, OSS -
+              [<a href="https://www.oss.kr/dev_competition_activities/show/1321848e-2337-4176-9bc1-6761aaa93384?page=13" target="_blank" rel="noopener noreferrer">SCloud</a>]
+            - java, spring, mongoDB 사용
+
+          |
+
+          - 공공 `Open API`를 활용한 텃밭 SNS 서비스 개발
+            - 스마트 & 오픈거버먼트(2012) 우수상, 행정안전부 -
+              [<a href="https://www.mois.go.kr/frt/bbs/type010/commonSelectBoardArticle.do?bbsId=BBSMSTR_000000000008&nttId=29365" target="_blank" rel="noopener noreferrer">텃밭누리</a>]
+            - php, codeIgniter, mysql 사용
+
+          |
+
+          - Android OS 패킷 분석툴 개발
+            - java, c, android 사용
+
+          |
+
+          - `Lucene` 을 활용한 관련주제 스크랩 서비스 개발
+            - java, lucene, mysql 사용
+
+      - layout: left
+        title: 육군 (1군 사령부)
+        # link: https://research.samsung.com
+        # link_text: boringcompany.com
+        sub_title: SW 개발병
+        caption: 2008.12 - 2010.10
+        quote: >
+          1군 사령부의 인트라넷 및 인터넷 구조 파악 및 서버 관리 경험 보유
+        description: | # this will include new lines to allow paragraphs
+          - 지휘통제 체계과 오피스 업무 담당
+          - 인트라넷 사이트 관리
+
+      - layout: left
+        title: 엔타즈
+        # link: https://research.samsung.com
+        # link_text: boringcompany.com
+        sub_title: 백엔드 개발자
+        caption: 2007.12 - 2008.10
+        quote: >
+          CMS 와 WAP 서비스 구조 이해. Mobile WAP 서비스를 실제로 운영한 경험 보유.
+        description: | # this will include new lines to allow paragraphs
+          - 피처폰 만화브라우저 서비스 개발
+            - KTF 보안검수 담당
+            - asp, html, mysql 사용
+
+          |
+
+          - WAP 브라우저에서 동작하는 일본게임 소개 페이지 및 다운로드 마켓 서버 개발 담당
+            - asp, html, mysql 사용
+
+  - title: <b>Skills</b>
+    layout: list
+    content:
+      - layout: left
+        sub_title: Security
+        description: |
+          <mark><b>fuzzing</b></mark>
+          <mark><b>llvm</b></mark>
+          <mark><b>cve</b></mark>
+          <mark><b>cwe</b></mark>
+          <mark><b>threat intelligence</b></mark>
+          <mark><b>linux kernel</b></mark>
+          <mark><b>arm trustzone</b></mark>
+
+      - layout: left
+        sub_title: Programming Language
+        description: |
+          <mark><b>python</b></mark>
+          <mark><b>c</b></mark>
+          <mark><b>c++</b></mark>
+          <mark><b>typescript</b></mark>
+          <mark><b>javascript</b></mark>
+          <mark><b>php</b></mark>
+
+      - layout: left
+        sub_title: Testing Framework
+        description: |
+          <mark><b>pytest</b></mark>
+          <mark><b>unittest</b></mark>
+          <mark><b>gtest</b></mark>
+          <mark><b>jest</b></mark>
+          <mark><b>junit</b></mark>
+
+      - layout: left
+        sub_title: Web Framework
+        description: |
+          <mark><b>django</b></mark>
+          <mark><b>flask</b></mark>
+          <mark><b>express</b></mark>
+          <mark><b>react</b></mark>
+          <mark><b>angular.js</b></mark>
+          <mark><b>codeigniter</b></mark>
+
+      - layout: left
+        sub_title: Database
+        description: |
+          <mark><b>mysql</b></mark>
+          <mark><b>mongodb</b></mark>
+          <mark><b>dgraph</b></mark>
+          <mark><b>kafka</b></mark>
+
+      - layout: left
+        sub_title: Infra
+        description: |
+          <mark><b>docker</b></mark>
+          <mark><b>docker-compose</b></mark>
+          <mark><b>circleci</b></mark>
+          <mark><b>github action</b></mark>
+          <mark><b>aws</b></mark>
+
+      - layout: left
+        sub_title: Blockchain
+        description: |
+          <mark><b>bridge</b></mark>
+          <mark><b>staking</b></mark>
+          <mark><b>ethers.js</b></mark>
+          <mark><b>web3.js</b></mark>
+          <mark><b>solidity</b></mark>
+          <mark><b>truffle</b></mark>
+
+  - title: <b>Projects</b> # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      # - layout: top-middle
+      #   title: Super awesome project
+      #   link: github.com/sproogen
+      #   link_text: Project Website
+      #   additional_links:
+      #     - title: sproogen/modern-resume-theme
+      #       icon: fab fa-github
+      #       url: github.com/sproogen/modern-resume-theme
+      #     # - title:  Github page for project (eg. sproogen/modern-resume-theme)
+      #     #   icon: fab fa-github
+      #     #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
+      #   quote: >
+      #     This is probably one of the greatest apps ever created, if you don't agree you're probably wrong.
+      #   description: | # this will include new lines to allow paragraphs
+      #     I started this project as a way if learning <mark>React</mark> and it has since grown into a fully fledged app. I have learned many skills through this and been I'm very proud of having this in my portfolio. If you don't have a project as awesome as this I would advise you make one.
+
+      - layout: top-middle
+        title: Extation
+        sub_title: 개인
+        caption: 2012.06 - 2012.11
+        quote: >
+          Bridge 와 Staking 을 지원하는 De-Fi 서비스
+        description: | # this will include new lines to allow paragraphs
+          Bridge 와 Staking 을 지원하는 De-Fi 서비스를 개발했습니다.
+          De-Fi 서비스이므로 개인지갑 연결방법인 metamask, wallet connect 두 가지 방식을 지원합니다.
+          Bridge 는 Ethereum, Binance Smart Chain, Klaytn 세 네트워간 상호 Bridging 이 가능하며, Staking 은 Klaytn 대상으로 구현했습니다.
+
+          현재는 2개의 지갑과 3개의 메인넷을 지원하지만 추후에 쉽게 추가할 수 있는 아키텍처를 구현하는데 중점을 뒀습니다.
+
+          - Implementation
+            - fontend
+              - metamask, wallet connect 연동
+              - ethers.js 활용한 contract 통신
+              - Bridge, Staking, Portfolio 페이지
+              - 반응형 사이트
+              - <mark>typescript</mark>, <mark>react</mark>
+            - contract
+              - lock & mint 방식의 bridge contract
+              - single staking pools 지원하는 staking contract
+              - solidity
+            - backend
+              - upbit, bithumb api 활용한 실시간 가격정보 연동
+              - bridge contract 간 가격 일치 확인 및 오류검증 scheduler
+              - <mark>typescript</mark>, <mark>express</mark>, <mark>aws lambda</mark> <mark>mysql</mark>
+            - infra
+              - github CI
+              - aws S3
+
+          |
+
+          - Contribution
+            - fontend 전체
+            - contract 일부
+            - infra 배포 스크립트
+            - backend scheduler
+
+  - title: <b>Awards</b> # Title for the section
     layout: list # Type of content section (list/text)
     content:
       - layout: left
-        title: Harvard University
-        caption: 2010 - 2013
-        sub_title: BSc Computer Science
-        quote: >
-          Established in 1636, Harvard is the oldest higher education institution in the United States, and is widely regarded in terms of its influence, reputation, and academic pedigree as a leading university in not just the US but also the world.
+        caption: 2019, 경기도경제과학진흥원
+        sub_title: 경기도 정보보안 해커톤
         description: | # this will include new lines to allow paragraphs
-          During my time at Harvard I learnt most of my key skills that have I have taken through my career such as teamwork and working to tight deadlines. I thouroughly enjoyed my time as university and learnt a lot about a healthy work life balance.
+          - 은상
+          - <a href="https://www.ajunews.com/view/20190728092948595" target="_blank" rel="noopener noreferrer">FirmwareHelper</a>
 
-          I spent a lot of my free time as a committee member of the *Harvard Mountaineering Club* taking on roles such as *Trip Secretary* and *Vice-President*.
+      - layout: left
+        caption: 2013, OSS
+        sub_title: 공개SW 개발자대회
+        description: | # this will include new lines to allow paragraphs
+          - 은상
+          - <a href="https://www.oss.kr/dev_competition_activities/show/1321848e-2337-4176-9bc1-6761aaa93384?page=13" target="_blank" rel="noopener noreferrer">SCloud</a>
 
-  - title: A Little More About Me
-    layout: text
-    content: | # this will include new lines to allow paragraphs
-      Alongside my interests in networks and software engineering some of my other interests and hobbies are:
-      - Rock climbing
-      - Gaming
-      - Knitting
-      - [Becoming a ninja](https://www.youtube.com/watch?v=vtg4o__aRMg)
+      - layout: left
+        caption: 2012, 행정안전부
+        sub_title: 스마트 & 오픈거버먼트
+        description: | # this will include new lines to allow paragraphs
+          - 우수상
+          - <a href="https://www.mois.go.kr/frt/bbs/type010/commonSelectBoardArticle.do?bbsId=BBSMSTR_000000000008&nttId=29365" target="_blank" rel="noopener noreferrer">텃밭누리</a>
 
-      Look at this cool image  
-      ![Trees](/modern-resume-theme/images/landscape-trees.jpg "Trees")
+  - title: <b>Education</b> # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: left
+        title: 광운대학교
+        caption: 2006.03 - 2014.02
+        sub_title: 컴퓨터 소프트웨어 학과
+        # quote: >
+        #   Established in 1636, Harvard is the oldest higher education institution in the United States, and is widely regarded in terms of its influence, reputation, and academic pedigree as a leading university in not just the US but also the world.
+        description: | # this will include new lines to allow paragraphs
+          - 임베디드 SW 세부전공
+          - 공학인증 이수
+          - 학술 동아리(K-NET) 소속
+
+  - title: <b>Mentorings</b> # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: left
+        caption: 2020.10, 경기창조경제혁신센터
+        sub_title: 누비랩 멘토링 2차 / 멘토
+        description: | # this will include new lines to allow paragraphs
+          frontend web service 개발에 대한 멘토링
+
+      - layout: left
+        caption: 2020.09, 경기창조경제혁신센터
+        sub_title: 누비랩 멘토링 1차 / 멘토
+        description: | # this will include new lines to allow paragraphs
+          개발문화 및 협업 툴 사용 원칙에 대한 멘토링
+
+      - layout: left
+        caption: 2020.08, 경기창조경제혁신센터
+        sub_title: 실전창업교육 3단계 선발 / 심사위원
+        description: | # this will include new lines to allow paragraphs
+          실전창업교육 3단계 대상 선발을 위한 심사
+
+      - layout: left
+        caption: 2020.07, 경기창조경제혁신센터
+        sub_title: 실전창업교육 온라인 멘토링 / 멘토
+        description: | # this will include new lines to allow paragraphs
+          창업관련 기획 & 개발 궁금증 멘토링
+
+      - layout: left
+        caption: 2020.05, 경기창조경제혁신센터
+        sub_title: 실전창업교육 멘토링 / 멘토
+        description: | # this will include new lines to allow paragraphs
+          창업관련 기획 & 개발 궁금증 멘토링
+
+      - layout: left
+        caption: 2018.10, 경기창조경제혁신센터
+        sub_title: 청년혁신가 인규베이팅 멘토링 / 멘토
+        description: | # this will include new lines to allow paragraphs
+          개발 및 보안 분야 궁금증 멘토링
+
+      - layout: left
+        caption: 2017.10, 경기창조경제혁신센터
+        sub_title: 청년혁신가 인규베이팅 멘토링 / 멘토
+        description: | # this will include new lines to allow paragraphs
+          창업관련 기획 & 개발 궁금증 멘토링
+
+      - layout: left
+        caption: 2017.08, 경기창조경제혁신센터
+        sub_title: 스타트업 리쿠르팅데이 / 멘토
+        description: | # this will include new lines to allow paragraphs
+          이력서 컨설팅 진행
+
+      - layout: left
+        caption: 2017.01, 이화여자대학교
+        sub_title: 이화여자대학교 스마트창작터 / 멘토
+        description: | # this will include new lines to allow paragraphs
+          스타트업 소프트랜딩을 위한 방법 멘토링
+
+  # - title: A Little More About Me
+  #   layout: text
+  #   content: | # this will include new lines to allow paragraphs
+  #     Alongside my interests in networks and software engineering some of my other interests and hobbies are:
+  #     - Rock climbing
+  #     - Gaming
+  #     - Knitting
+  #     - [Becoming a ninja](https://www.youtube.com/watch?v=vtg4o__aRMg)
 
 # Footer
 footer_show_references: true
@@ -124,4 +410,4 @@ sass:
   style: compressed
 
 plugins:
- - jekyll-seo-tag
+  - jekyll-seo-tag
