@@ -77,32 +77,47 @@ content:
           Security team에서 OS 부터 application level 까지 다양한 layer의 보안 문제를 경험하고 해결해 온 경험 보유
         description: | # this will include new lines to allow paragraphs
           - `Fuzzing`을 활용해 자동으로 software 잠재 취약점을 찾는 기술인 Utopia 연구 및 개발
-            - Utopia 를 통해 linux system library & android library 에서 20개 이상의 잠재 취약점 발견 및 `CVE` 등록
-            - android library 취약점 발견 프로젝트에서 3명의 팀원을 `Tech leading`
-            - python, C++, llvm 사용
+            - Utopia 를 통해 Linux system library & Android library 에서 20개 이상의 잠재 취약점 발견 및 `CVE` 등록
+            - 10명 팀 `Scrum Master` 역할을 수행했고, Android library 취약점 파트에서 3명의 팀원을 `tech leading`
+            - `LLVM`을 사용하여 GTEST syntax parsing 및 fuzz driver 자동 생성 구현
+            - Tizen, Android, Linux 대상 동일 코드로 구동 될 수 있도록 `아키텍처` 설계 및 구현
+            - CI(GitHub action) 에서 Unit Test, Linter 등을 비롯한 10개 이상의 checker 자동 실행될 수 있도록 구성
+            - <mark>Python</mark> <mark>C++</mark> <mark>LLVM</mark>
             - <a href="https://github.com/Samsung/UTopia" target="_blank" rel="noopener noreferrer">UTopia github</a>
 
           |
 
           - `Graph DB` 를 활용한 취약점 연관 분석 기능 개발
-            - python, neo4j, dgraph 사용
+            - crawler 를 활용해 주기적으로 웹 상의 모든 취약점 관련 데이터(CVE, CWE, Wikipedia, News, ETC) 수집 (`100TB` 이상)
+            - `대용량` 저장, 쿼리 속도 검증을 위해 Neo4J 등 Graph DB 검토
+            - `Dgraph` 를 활용해 여러 노드로 수집 된 모든 데이터 `분산` 저장 및 관계 그래프 구축
+            - 구축 된 취약점 그래프를 활용해 연관 취약점 검색 및 분석 기능 개발
+            - <mark>Python</mark> <mark>Neo4J</mark> <mark>Dgraph</mark>
 
           |
 
-          - Threat Intelligence 기술에 활용하기 위한 악성 url & ip `crawler` 개발
-            - 일일 약 `100k page 를 수집`했으며, 그 중 악성 url & ip 수백개 검출
-            - python, kafka, vpn API, mongoDB 사용
+          - Threat Intelligence 기술에 활용하기 위한 악성 URL & IP `crawler` 개발
+            - 일일 약 `100k page 를 수집`했으며, 그 중 악성 URL & IP 수백개 검출
+            - 다양한 사이트에서 동작할 수 있는 crawler 및 parser interface 설계
+            - `Celery`, `Kafka`를 이용해 장애없이 50 개 이상의 사이트를 매 시간 자동으로 수집해주는 스케쥴러 설계 및 구현
+            - crawling 속도 문제를 해결하기 위해 VPN API 활용
+            - <mark>Python</mark> <mark>Kafka</mark> <mark>VPN API</mark> <mark>MongoDB</mark>
 
           |
 
           - `Machine Learning` 기반 Anti-virus engine 개발
-            - python, scikit-learn, TensorFlow, pandas 사용
+            - `xgboost` 를 이용한 virus 검출 모델 구현
+            - 다양한 모델 별 정확도 비교실험
+            - <mark>Python</mark> <mark>Scikit-learn</mark> <mark>TensorFlow</mark> <mark>Pandas</mark>
 
           |
 
-          - `Trustzone` 을 활용한 Tizen 커널 무결성 보호 기술인 SIM 연구 및 개발
+          - `TrustZone` 을 활용한 Tizen 커널 무결성 보호 기술인 SIM 연구 및 개발
             - 삼성(Tizen) TV 에 SIM 기술을 '15년부터 현재까지 탑재
-            - C(Device Driver), C++, TrustWare, Tizen 사용
+            - Linux kernel 의 page table 및 memory 동작 방식 연구
+            - Linux kernel의 메모리 보호 기능을 담당하는 `TrustZone app` 구현
+            - Snooper 라는 메모리 보호 HW 를 제어 할 수 있는 `device driver` 구현
+            - <mark>C(Device Driver)</mark> <mark>C++</mark> <mark>TrustWare</mark> <mark>Tizen</mark>
 
       - layout: left
         title: Samsung Software Membership
@@ -116,24 +131,26 @@ content:
           - `Dokan`을 이용해 클라우드 스토리지를 통합한 통합형 스토리 플랫폼 개발
             - 공개SW 개발자대회(2013) 은상, OSS -
               [<a href="https://www.oss.kr/dev_competition_activities/show/1321848e-2337-4176-9bc1-6761aaa93384?page=13" target="_blank" rel="noopener noreferrer">SCloud</a>]
-            - java, spring, mongoDB 사용
+            - Spring 을 기반으로 web 기반 `file system API` 구축
+            - 4개의 cloud services(GoogleDrive, Dropbox, SkyDrive, UCloud) API 연동
+            - <mark>Java</mark> <mark>Spring</mark> <mark>MongoDB</mark>
 
           |
 
           - 공공 `Open API`를 활용한 텃밭 SNS 서비스 개발
             - 스마트 & 오픈거버먼트(2012) 우수상, 행정안전부 -
               [<a href="https://www.mois.go.kr/frt/bbs/type010/commonSelectBoardArticle.do?bbsId=BBSMSTR_000000000008&nttId=29365" target="_blank" rel="noopener noreferrer">텃밭누리</a>]
-            - php, codeIgniter, mysql 사용
+            - <mark>PHP</mark> <mark>CodeIgniter</mark> <mark>MySQL</mark>
 
           |
 
           - Android OS 패킷 분석툴 개발
-            - java, c, android 사용
+            - <mark>Java</mark> <mark>C</mark> <mark>Android</mark>
 
           |
 
           - `Lucene` 을 활용한 관련주제 스크랩 서비스 개발
-            - java, lucene, mysql 사용
+            - <mark>Java</mark> <mark>Lucene</mark> <mark>MySQL</mark>
 
       - layout: left
         title: 육군 (1군 사령부)
@@ -158,12 +175,12 @@ content:
         description: | # this will include new lines to allow paragraphs
           - 피처폰 만화브라우저 서비스 개발
             - KTF 보안검수 담당
-            - asp, html, mysql 사용
+            - <mark>ASP</mark> <mark>HTML</mark> <mark>MySQL</mark>
 
           |
 
           - WAP 브라우저에서 동작하는 일본게임 소개 페이지 및 다운로드 마켓 서버 개발 담당
-            - asp, html, mysql 사용
+            - <mark>ASP</mark> <mark>HTML</mark> <mark>MySQL</mark>
 
   - title: <b>Skills</b>
     layout: list
@@ -171,59 +188,59 @@ content:
       - layout: left
         sub_title: Security
         description: |
-          <mark><b>fuzzing</b></mark>
-          <mark><b>llvm</b></mark>
-          <mark><b>cve</b></mark>
-          <mark><b>cwe</b></mark>
-          <mark><b>threat intelligence</b></mark>
-          <mark><b>linux kernel</b></mark>
-          <mark><b>arm trustzone</b></mark>
+          <mark><b>Fuzzing</b></mark>
+          <mark><b>LLVM</b></mark>
+          <mark><b>CVE</b></mark>
+          <mark><b>CWE</b></mark>
+          <mark><b>Threat Intelligence</b></mark>
+          <mark><b>Linux kernel</b></mark>
+          <mark><b>ARM TrustZone</b></mark>
 
       - layout: left
         sub_title: Programming Language
         description: |
-          <mark><b>python</b></mark>
-          <mark><b>c</b></mark>
-          <mark><b>c++</b></mark>
-          <mark><b>typescript</b></mark>
-          <mark><b>javascript</b></mark>
-          <mark><b>php</b></mark>
+          <mark><b>Python</b></mark>
+          <mark><b>C</b></mark>
+          <mark><b>C++</b></mark>
+          <mark><b>Typescript</b></mark>
+          <mark><b>Javascript</b></mark>
+          <mark><b>PHP</b></mark>
 
       - layout: left
         sub_title: Testing Framework
         description: |
-          <mark><b>pytest</b></mark>
+          <mark><b>PyTest</b></mark>
           <mark><b>unittest</b></mark>
-          <mark><b>gtest</b></mark>
-          <mark><b>jest</b></mark>
-          <mark><b>junit</b></mark>
+          <mark><b>GTest</b></mark>
+          <mark><b>Jest</b></mark>
+          <mark><b>JUnit</b></mark>
 
       - layout: left
         sub_title: Web Framework
         description: |
-          <mark><b>django</b></mark>
-          <mark><b>flask</b></mark>
-          <mark><b>express</b></mark>
-          <mark><b>react</b></mark>
+          <mark><b>Django</b></mark>
+          <mark><b>Flask</b></mark>
+          <mark><b>Express</b></mark>
+          <mark><b>React</b></mark>
           <mark><b>angular.js</b></mark>
-          <mark><b>codeigniter</b></mark>
+          <mark><b>CodeIgniter</b></mark>
 
       - layout: left
         sub_title: Database
         description: |
-          <mark><b>mysql</b></mark>
-          <mark><b>mongodb</b></mark>
-          <mark><b>dgraph</b></mark>
-          <mark><b>kafka</b></mark>
+          <mark><b>MySQL</b></mark>
+          <mark><b>MongoDB</b></mark>
+          <mark><b>Dgraph</b></mark>
+          <mark><b>Kafka</b></mark>
 
       - layout: left
         sub_title: Infra
         description: |
-          <mark><b>docker</b></mark>
-          <mark><b>docker-compose</b></mark>
-          <mark><b>circleci</b></mark>
-          <mark><b>github action</b></mark>
-          <mark><b>aws</b></mark>
+          <mark><b>Docker</b></mark>
+          <mark><b>Docker Compose</b></mark>
+          <mark><b>CircleCI</b></mark>
+          <mark><b>Github action</b></mark>
+          <mark><b>AWS</b></mark>
 
       - layout: left
         sub_title: Blockchain
@@ -232,8 +249,8 @@ content:
           <mark><b>staking</b></mark>
           <mark><b>ethers.js</b></mark>
           <mark><b>web3.js</b></mark>
-          <mark><b>solidity</b></mark>
-          <mark><b>truffle</b></mark>
+          <mark><b>Solidity</b></mark>
+          <mark><b>Truffle</b></mark>
 
   - title: <b>Projects</b> # Title for the section
     layout: list # Type of content section (list/text)
