@@ -188,69 +188,69 @@ content:
       - layout: left
         sub_title: Security
         description: |
-          <mark><b>Fuzzing</b></mark>
-          <mark><b>LLVM</b></mark>
-          <mark><b>CVE</b></mark>
-          <mark><b>CWE</b></mark>
-          <mark><b>Threat Intelligence</b></mark>
-          <mark><b>Linux kernel</b></mark>
-          <mark><b>ARM TrustZone</b></mark>
+          <mark>Fuzzing</mark>
+          <mark>LLVM</mark>
+          <mark>CVE</mark>
+          <mark>CWE</mark>
+          <mark>Threat Intelligence</mark>
+          <mark>Linux kernel</mark>
+          <mark>ARM TrustZone</mark>
 
       - layout: left
         sub_title: Programming Language
         description: |
-          <mark><b>Python</b></mark>
-          <mark><b>C</b></mark>
-          <mark><b>C++</b></mark>
-          <mark><b>Typescript</b></mark>
-          <mark><b>Javascript</b></mark>
-          <mark><b>PHP</b></mark>
+          <mark>Python</mark>
+          <mark>C</mark>
+          <mark>C++</mark>
+          <mark>Typescript</mark>
+          <mark>Javascript</mark>
+          <mark>PHP</mark>
 
       - layout: left
         sub_title: Testing Framework
         description: |
-          <mark><b>PyTest</b></mark>
-          <mark><b>unittest</b></mark>
-          <mark><b>GTest</b></mark>
-          <mark><b>Jest</b></mark>
-          <mark><b>JUnit</b></mark>
+          <mark>PyTest</mark>
+          <mark>unittest</mark>
+          <mark>GTest</mark>
+          <mark>Jest</mark>
+          <mark>JUnit</mark>
 
       - layout: left
         sub_title: Web Framework
         description: |
-          <mark><b>Django</b></mark>
-          <mark><b>Flask</b></mark>
-          <mark><b>Express</b></mark>
-          <mark><b>React</b></mark>
-          <mark><b>angular.js</b></mark>
-          <mark><b>CodeIgniter</b></mark>
+          <mark>Django</mark>
+          <mark>Flask</mark>
+          <mark>Express</mark>
+          <mark>React</mark>
+          <mark>angular.js</mark>
+          <mark>CodeIgniter</mark>
 
       - layout: left
         sub_title: Database
         description: |
-          <mark><b>MySQL</b></mark>
-          <mark><b>MongoDB</b></mark>
-          <mark><b>Dgraph</b></mark>
-          <mark><b>Kafka</b></mark>
+          <mark>MySQL</mark>
+          <mark>MongoDB</mark>
+          <mark>Dgraph</mark>
+          <mark>Kafka</mark>
 
       - layout: left
         sub_title: Infra
         description: |
-          <mark><b>Docker</b></mark>
-          <mark><b>Docker Compose</b></mark>
-          <mark><b>CircleCI</b></mark>
-          <mark><b>Github action</b></mark>
-          <mark><b>AWS</b></mark>
+          <mark>Docker</mark>
+          <mark>Docker Compose</mark>
+          <mark>CircleCI</mark>
+          <mark>Github action</mark>
+          <mark>AWS</mark>
 
       - layout: left
         sub_title: Blockchain
         description: |
-          <mark><b>bridge</b></mark>
-          <mark><b>staking</b></mark>
-          <mark><b>ethers.js</b></mark>
-          <mark><b>web3.js</b></mark>
-          <mark><b>Solidity</b></mark>
-          <mark><b>Truffle</b></mark>
+          <mark>bridge</mark>
+          <mark>staking</mark>
+          <mark>ethers.js</mark>
+          <mark>web3.js</mark>
+          <mark>Solidity</mark>
+          <mark>Truffle</mark>
 
   - title: <b>Projects</b> # Title for the section
     layout: list # Type of content section (list/text)
