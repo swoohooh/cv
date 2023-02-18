@@ -274,7 +274,7 @@ content:
       - layout: top-middle
         title: Extation
         sub_title: 개인
-        caption: 2012.06 - 2012.11
+        caption: 2022.06 - 2022.11
         quote: >
           Bridge 와 Staking 을 지원하는 De-Fi 서비스
         description: | # this will include new lines to allow paragraphs
@@ -314,7 +314,7 @@ content:
       - layout: top-middle
         title: Utopia
         sub_title: Sasmung Research
-        caption: 2010.01 - 2012.05
+        caption: 2020.01 - 2022.05
         quote: >
           Fuzz Driver를 자동으로 만들어주는 취약점 탐지 자동화 기술
         description: | # this will include new lines to allow paragraphs
